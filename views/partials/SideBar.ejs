@@ -1,0 +1,56 @@
+<!-- Changes by Saurav -->
+<style>
+  div.logo {
+    width: 260px;
+  }
+
+  .sub-question {
+    margin-left: 4em;
+  }
+
+  .active-question > p {
+    color: coral !important;
+  }
+</style>
+
+<div class="sidebar" data-color="white" data-active-color="danger">
+  <div class="logo">
+    <a href="" id="emailid" class="simple-text logo-normal"> VALCORN </a>
+  </div>
+  <div class="sidebar-wrapper">
+    <ul class="nav">
+      <li id="dashboard">
+        <a href="/">
+          <i class="nc-icon nc-layout-11"></i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      <li id="user">
+        <a href="/user">
+          <i class="nc-icon nc-money-coins"></i>
+          <p>User</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  console.log(window.location.href);
+  if (window.location.href.toString().endsWith("financial")) {
+    document.getElementById("financials").classList.toggle("active");
+    document.querySelector(".sub-question-container").style.display = "none";
+  } else if (window.location.href.endsWith("home")) {
+    document.getElementById("home").classList.toggle("active");
+    document.querySelector(".sub-question-container").style.display = "none";
+  } else if (window.location.href.endsWith("user")) {
+    document.getElementById("user").classList.toggle("active");
+  } else if (window.location.href.includes("questionnaire")) {
+    document.getElementById("questionnaire").classList.toggle("active");
+  } else if (window.location.href.endsWith("dashboard")) {
+    document.getElementById("dashboard").classList.toggle("active");
+    document.querySelector(".sub-question-container").style.display = "none";
+  } else if (window.location.href.endsWith("funds")) {
+    document.getElementById("funds").classList.toggle("active");
+    document.querySelector(".sub-question-container").style.display = "none";
+  }
+</script>

@@ -1,0 +1,96 @@
+body {
+    padding-top: 56px;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    width: 5px;
+    height: 5px;
+}
+.navbar .navbar-brand {
+    color: #ffffff;
+}
+.nav-item{
+    padding-right: 2rem;
+}
+.bg-valcorn {
+    background-color: #004aad ;
+}
+.jumbotron {
+    background-size: contain;
+
+}
+.add-padding-top{
+    padding-top: 4rem;
+}
+.add-padding-top-2{
+    padding-top: 2rem;
+}
+.for-text{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #42b8fd;
+}
+.for-para{
+    padding-left: 2rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.for-icon{
+    color: white;
+    text-align: left;
+    display: inline-block;
+    margin-left: 5px;
+}
+.add-padding-bottom{
+    padding-bottom: 2rem;
+}
+.display-1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 7rem;
+}
+.display-5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.btn-primary {
+    background-color: #4b6dc2;
+}
+.space-provided{
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+}
+.footer-color-and-size{
+    color: white;
+    font-size: 1rem;
+}
+.seperate-from-image{
+    padding-top: 1rem;
+}
+.paragraph-centre{
+    text-align: center;
+}
+.paragraph-text{
+    color: white;
+    font-size: 27px;
+}
+.paragraph-signature{
+    color: white;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 24px;
+}
+.image-centre{
+    padding-left: 4rem;
+    padding-right: 2rem;
+}

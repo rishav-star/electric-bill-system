@@ -1,0 +1,112 @@
+<%- include('partials/header') %>
+<%- include('partials/SideBar') %>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+</style>
+
+<div class="content">
+
+  <!-- <div class="row">
+    <div class="col-md-6">
+      <div class="card" style="padding-bottom: 20px;">
+        <div class="card-header ">
+          <h3 class="card-title">Owners of Company</h3>
+          <p class="card-category">Current ownership</p>
+        </div>
+        <div class="card-body ">
+          <canvas id="chartOwner"></canvas>
+        </div>
+        <div class="card-footer ">
+          <hr>
+          <div class="legend" id="ownerName">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="row">
+    <div class="col-md">
+      <div class="card ">
+          <table border="1">
+            <tr>
+                <th>S.N</th>
+                <th>Full Name</th>
+                <th>Email Address</th>
+                <th>Units</th>
+                <th>Area</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>Anupam Saini</td>
+                <td>anupam.saini18@gmail.com</td>
+                <td>200</td>
+                <td>mansarovar</td>
+                <td>Jaipur</td>
+                <td>India</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Sarthak Sharma</td>
+              <td>sarthaksharma12@gmail.com</td>
+              <td>500</td>
+              <td>sudarshan nagar</td>
+              <td>Bikaner</td>
+              <td>India</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Rishav Kabra</td>
+            <td>rishavkabra02@gmail.com</td>
+            <td>250</td>
+            <td>Kolkata</td>
+            <td>Kolkata</td>
+            <td>India</td>
+        </tr>
+                <!-- <tr>
+                    <td colspan="7">No Data Found</td>
+                </tr> -->
+        </table>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- <script>
+  fetch('http://localhost:3000/chart-question')
+    .then(data => data.json())
+    .then(resQuestion => {
+      let owners = Object.keys(resQuestion.genericData.curr_owner);
+      let totalOwners = owners.length;
+      let j = 0;
+      owners.forEach((i) => {
+        let x = `<i class="fa fa-circle" id="${j}"></i> ${i}  `;
+        $("#ownerName").append(x);
+        j++;
+      });
+      let backgroundColor = ['#2E2EFF', '#4ccced', '#ff3355', '#5CFF5C', '#fcc468', '#ef8157', '#9370db', '#9f9f9f', '#66cdaa', '#228b55'];
+
+      for (let i = 0; i < totalOwners; i++) {
+        document.getElementById(`${i}`).style.color = backgroundColor[i];
+      }
+    });
+</script> -->
+
+<%- include('partials/footer') %>

@@ -1,0 +1,115 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    margin: .5em 0;
+    color: #505050;
+}
+.question-nav{
+    width: 100%;
+    margin: 10px auto;
+    background: #333;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+}
+.question-para{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.question-link{
+    flex: 150px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background: hsla(0, 0%, 100%, 0.1);
+    margin: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 3px;
+}
+.question-link:hover{
+    text-decoration: none;
+    color: #000;
+    background: #f0f0f0;
+}
+.form{
+    width: 100%;
+    padding: 1em;
+    margin: 1em auto;
+    background: #fff;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+.question-box{
+    margin-bottom: 1em;
+}
+.question-box > *{
+    margin-bottom: 1em;
+}
+
+p{
+    font-weight: 500;
+}
+.question-num{
+    font-weight: 600;
+    margin-right: .5em;
+}
+.question-num::after{
+    content: '.';
+}
+textarea{
+    width: 100%;
+    max-width: 25em;
+    padding: .5em;
+    margin: 2px 25px;
+}
+
+.question-box  .input-container,
+.question-box select,
+.question-box ul,
+.add-btn{
+    margin: 2px 25px;
+    padding: 3px;
+}
+.input-container > input{
+    padding: 3px;
+}
+ul{
+    list-style: none;
+}
+.add-btn{
+   
+    background: none;
+    border: none;
+    background: #004aad;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: .8rem;
+}
+@media (max-width:600px) {
+    .input-container input{
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .add-btn{
+        width: 100%;
+    }
+}
+.btn-container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.current-owner-box{
+    margin-bottom: 5px;
+}
